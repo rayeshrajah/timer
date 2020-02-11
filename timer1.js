@@ -7,8 +7,9 @@ for(let i = 0; i < array.length; i++){
     if(isNaN(array[i])){
         std.write("Not a number. Please enter a number");
         process.exit();
-    }else if(){
-        
+    }else if(array[i] < 0){
+        std.write("Can't process a negative number");
+        process.exit();
     }
     setTimeout(() => {
         std.write('\x07');
